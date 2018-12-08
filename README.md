@@ -1,9 +1,10 @@
 # praktikum7
 
 
-##latihan1 : fibonacci iteratif
+#latihan1 : fibonacci iteratif
 
 ** Alur Algoritma **
+
 1. Mendeklarasikan variabel `n,c,f1=0,f2=1,next : integer
    x : integer`
 2. Membaca input `cin >> n`
