@@ -76,3 +76,50 @@ end
 
 **hasilnya**
 ![hasilnya](https://github.com/iisamelia/praktikum7/blob/master/hasil1.PNG)
+
+
+##latihan2:Menghitung hasil perkalian menggunakan operator penjumlahan
+
+**Alur Algoritma**
+1. Mulai Program
+2. Input interger fungsi `int x, y, hasil`
+3. jika nilai interger (hasil = 0) return hasil
+4. cetak nilai perkalian dengan memanggil funsi rekrusif menggunakan type datanya
+
+**kode lengkap program**
+```c++
+#include <iostream>
+using namespace std;
+
+int main(){
+int x,y,hasil;
+cout<<"Menghitung hasil perkalian menggunakan operator penjumlahan\n";
+cout<<"Masukkan bilangan: ";
+cin>>x;
+cout<<"Dikalikan dengan: ";
+cin>>y;
+hasil=0;
+
+for (int i=0;i<y;i++){
+hasil=hasil+x;}
+cout<<"Hasil "<<x<<" x "<<y<<" adalah "<< hasil;
+
+return 0;
+
+}
+```
+
+**pseudocode**
+```
+read x
+read y
+hasil <- 0
+for i <- 0 to y do
+hasil <- hasil + x
+end for
+write hasil
+end
+```
+
+**hasilnya**
+![hasilnya](https://github.com/iisamelia/praktikum7/blob/master/hasil2.PNG)
