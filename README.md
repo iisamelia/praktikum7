@@ -84,7 +84,7 @@ end
 1. Mulai Program
 2. Input interger fungsi `int x, y, hasil`
 3. jika nilai interger (hasil = 0) return hasil
-4. cetak nilai perkalian dengan memanggil funsi rekrusif menggunakan type datanya
+4. cetak nilai perkalian dengan memanggil fungsi rekrusif menggunakan type datanya
 
 **kode lengkap program**
 ```c++
@@ -123,3 +123,52 @@ end
 
 **hasilnya**
 ![hasilnya](https://github.com/iisamelia/praktikum7/blob/master/hasil2.PNG)
+
+##latihan3
+
+**Alur Algoritma**
+1. Mulai program tersebut
+2. input menggunakan initruksi void dan menggunakan pointer untuk menetapakan void typedata (char *s)
+3. jika nilai s!=0--> menggunakan Pointer(*) maka masukan intruksi membalik (&s[1])
+4. masuan char untuk intruksi kata yang ingin kita ubah dan intruksi balik
+5. cetak pemblikan kata dengan memanggil funsi rekrusif menggunkan type datany.
+
+**kode lengkap program**
+```c++
+#include<iostream>
+#include<string.h>
+
+using namespace std;
+void balik(char *s)
+{ if (*s != '\0'){
+balik(&s[1]);
+cout << s[0];
+}
+}
+int main()
+{
+      char* kata = (char*) "iis";
+    balik(kata); cout << endl;
+    return 0;
+
+}
+```
+
+**pseudocode**
+```
+#include
+#include
+void balik(char *k){
+if(*k!=”){
+balik(&k[1]);
+cout<
+}
+}main(){
+char *kata=”....”;--> //untuk masukan kata
+balik(kata);
+cout<
+return 0;
+```
+
+**hasilnya**
+![hasilnya](https://github.com/iisamelia/praktikum7/blob/master/hasil3.PNG)
